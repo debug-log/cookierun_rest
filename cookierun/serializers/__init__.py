@@ -5,3 +5,4 @@ from .LogCookiePetTreasureSerializer import LogCookiePetTreasureSerializer
 from .LogCrystalGoldUsageSerializer import LogCrystalGoldUsageSerializer
 from .LogDailyMissionSerializer import LogDailyMissionSerializer
 from .LogExperienceSerializer import LogExperienceSerializer
+from .LogOpenChestSerializer import LogOpenChestSerializer
