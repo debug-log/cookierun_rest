@@ -5,3 +5,4 @@ from .LogCookiePetTreasure import LogCookiePetTreasure
 from .LogCrystalGoldUsage import LogCrystalGoldUsage
 from .LogDailyMission import LogDailyMission
 from .LogExperience import LogExperience
+from .LogOpenChest import LogOpenChest

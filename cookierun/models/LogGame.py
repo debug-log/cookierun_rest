@@ -10,6 +10,7 @@ class LogGame(models.Model):
     treasure1st_id = models.IntegerField(default=-1)
     treasure2nd_id = models.IntegerField(default=-1)
     treasure3rd_id = models.IntegerField(default=-1)
+    play_time = models.IntegerField(default=0)
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:

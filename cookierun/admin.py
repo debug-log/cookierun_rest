@@ -8,7 +8,7 @@ class LogAccessAdmin(admin.ModelAdmin):
     list_display = ('pname', 'types', 'date')
 
 class LogGameAdmin(admin.ModelAdmin):
-    list_display = ('pname', 'score', 'cookie1st_id', 'cookie2nd_id', 'pet_id', 'treasure1st_id', 'treasure2nd_id', 'treasure3rd_id', 'date',)
+    list_display = ('pname', 'score', 'cookie1st_id', 'cookie2nd_id', 'pet_id', 'treasure1st_id', 'treasure2nd_id', 'treasure3rd_id', 'play_time', 'date',)
 
 class LogCookiePetTreasureAdmin(admin.ModelAdmin):
     list_display = ('pname', 'equip_id', 'lv', 'amount', 'date')
@@ -22,6 +22,10 @@ class LogDailyMissionAdmin(admin.ModelAdmin):
 class LogExperienceAdmin(admin.ModelAdmin):
     list_display = ('pname', 'lv', 'exp', 'date')
 
+class LogOpenChestAdmin(admin.ModelAdmin):
+    list_display = ('pname', 'types', 'date')
+    
+
 admin.site.register(Player, PlayerAdmin)
 admin.site.register(LogAccess, LogAccessAdmin)
 admin.site.register(LogGame, LogGameAdmin)
@@ -29,3 +33,4 @@ admin.site.register(LogCookiePetTreasure, LogCookiePetTreasureAdmin)
 admin.site.register(LogCrystalGoldUsage, LogCrystalGoldUsageAdmin)
 admin.site.register(LogDailyMission, LogDailyMissionAdmin)
 admin.site.register(LogExperience, LogExperienceAdmin)
+admin.site.register(LogOpenChest, LogOpenChestAdmin)
