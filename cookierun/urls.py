@@ -8,7 +8,8 @@ from cookierun.views import LogCrystalGoldUsageList
 from cookierun.views import LogDailyMissionList
 from cookierun.views import LogCookiePetTreasureList
 from cookierun.views import LogExperienceList
-from cookierun.views import LogOpenChest
+from cookierun.views import LogOpenChestList
+from cookierun.views import OptionsList
 
 urlpatterns = [
     url(r'^player/$', PlayerList.as_view()),
@@ -20,7 +21,8 @@ urlpatterns = [
     url(r'^logdailymission/$', LogDailyMissionList.as_view()),
     url(r'^logbestscore/$', LogBestScoreList().as_view()),
     url(r'^logexperience/$', LogExperienceList.as_view()),
-    url(r'^logopenchest/$', LogAccessList.as_view()),
+    url(r'^logopenchest/$', LogOpenChestList.as_view()),
+    url(r'^options/$', OptionsList.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

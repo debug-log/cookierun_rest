@@ -6,3 +6,4 @@ from .LogCrystalGoldUsageSerializer import LogCrystalGoldUsageSerializer
 from .LogDailyMissionSerializer import LogDailyMissionSerializer
 from .LogExperienceSerializer import LogExperienceSerializer
 from .LogOpenChestSerializer import LogOpenChestSerializer
+from .OptionsSerializer import OptionsSerializer

@@ -24,6 +24,9 @@ class LogExperienceAdmin(admin.ModelAdmin):
 
 class LogOpenChestAdmin(admin.ModelAdmin):
     list_display = ('pname', 'types', 'date')
+
+class OptionsAdmin(admin.ModelAdmin):
+    list_display = ('title', 'content')
     
 
 admin.site.register(Player, PlayerAdmin)
@@ -34,3 +37,4 @@ admin.site.register(LogCrystalGoldUsage, LogCrystalGoldUsageAdmin)
 admin.site.register(LogDailyMission, LogDailyMissionAdmin)
 admin.site.register(LogExperience, LogExperienceAdmin)
 admin.site.register(LogOpenChest, LogOpenChestAdmin)
+admin.site.register(Options, OptionsAdmin)
